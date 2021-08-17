@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Counter from './components/Counter';
+import ClassCounter from './components/ClassCounter';
+import './styles/App.css';
 
 function App() {
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="post">
+        <div className="post__content">
+          <strong>1. JavaScript</strong>
+          <div>
+            JavaScript - is the capital of Great Britain
+          </div>
+        </div>
+        <div className="post__btns ">
+          <button>Delete post</button>
+        </div>
+
+      </div>
+    
     </div>
   );
 }
